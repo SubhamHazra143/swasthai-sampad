@@ -1,194 +1,1499 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Swasthai Sampad Medical Store</title>
-	<meta
-	  name="description"
-	  content="Swasthai Sampad Medical Store offers trusted healthcare products, daily wellness essentials, and exclusive discounts up to 25%."
-	/>
-	<link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-	<header class="site-header">
-	  <nav class="container nav">
-		<div class="brand-wrap">
-		  <div class="brand-mark">+</div>
-		  <div class="brand-text">
-			<span class="brand-name">Swasthai Sampad</span>
-			<small>Medical Store</small>
-		  </div>
-		</div>
 
-		<ul class="nav-links">
-		  <li><a href="#home">Home</a></li>
-		  <li><a href="#about">About</a></li>
-		  <li><a href="#offers">Offers</a></li>
-		  <li><a href="#contact">Contact</a></li>
-		</ul>
-	  </nav>
-	</header>
+	<head>
 
-	<main>
-	  <section id="home" class="hero">
-		<div class="container hero-content">
-		  <div class="hero-copy">
-			<p class="eyebrow">Trusted healthcare for every family</p>
-			<h1>Care you can count on.</h1>
-			<p class="lead">
-			  Flat 21% discount on everyday medicines and healthcare essentials,
-			  with selected products offering savings up to 25%.
-			</p>
+		<meta charset="UTF-8" />
 
-			<div class="promo-box">
-			  <span class="promo-label">Limited Time Offer</span>
-			  <strong>Flat 21% OFF</strong>
-			  <span>Up to 25% OFF on select wellness & premium care items</span>
+		<meta
+		  name="viewport"
+		  content="width=device-width, initial-scale=1.0"
+  />
+		<script src="js/main.js"></script>
+		<script src="js/language.js"></script>
+
+		<title>
+			Swasthai Sampad | Medical Store, Doctors & Diagnostics in Serampore
+		</title>
+
+		<meta
+		  name="description"
+		  content="Swasthai Sampad is a healthcare destination in Serampore offering branded medicines, doctor consultations, diagnostic test booking, skincare, haircare and baby care products."
+  />
+
+		<meta
+		  name="keywords"
+		  content="Swasthai Sampad, medical store Serampore, pharmacy Serampore, medicines Serampore, doctor Serampore, diagnostic test Serampore, skincare Serampore, baby care Serampore"
+  />
+
+		<meta
+		  name="theme-color"
+		  content="#0D6E6D"
+  />
+
+		<link
+		  rel="canonical"
+		  href="https://swasthaisampad.in/"
+  />
+
+		<!-- Google Fonts -->
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+
+		<link
+		  rel="preconnect"
+		  href="https://fonts.gstatic.com"
+		  crossorigin=""
+  />
+
+		<link
+		  href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap"
+		  rel="stylesheet"
+  />
+
+		<link
+		  rel="stylesheet"
+		  href="css/style.css"
+  />
+
+
+		<!-- ================= STRUCTURED DATA ================= -->
+
+		<script type="application/ld+json">
+
+			{
+			"@context": "https://schema.org",
+			"@type": ["Pharmacy", "MedicalBusiness"],
+
+			"name": "Swasthai Sampad",
+
+			"alternateName": "Swasthai Sampad Medical Store",
+
+			"url": "https://swasthaisampad.in/",
+
+			"telephone": "+919831998054",
+
+			"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "38 Dey Street",
+			"addressLocality": "Serampore",
+			"addressRegion": "West Bengal",
+			"postalCode": "712201",
+			"addressCountry": "IN"
+			},
+
+			"areaServed": {
+			"@type": "City",
+			"name": "Serampore"
+			}
+			}
+
+		</script>
+
+	</head>
+
+
+	<body>
+		<script src="js/main.js"></script>
+		<script src="js/language.js"></script>
+
+
+		<!-- =====================================================
+       HEADER
+       ===================================================== -->
+
+		<header class="site-header">
+
+			<nav class="container nav">
+
+
+				<!-- BRAND -->
+
+				<a
+				  href="index.html"
+				  class="brand-wrap"
+				  aria-label="Swasthai Sampad Home"
+      >
+
+					<div class="brand-mark">
+						+
+					</div>
+
+					<div class="brand-text">
+
+						<span class="brand-name">
+							Swasthai Sampad
+						</span>
+
+						<small data-i18n="brand_tagline">
+							Healthcare • Pharmacy
+						</small>
+
+					</div>
+
+				</a>
+
+
+				<!-- DESKTOP NAVIGATION -->
+
+				<div class="nav-menu">
+
+					<a href="index.html" class="active" data-i18n="nav_home">Home</a>
+
+					<a href="medicines.html" data-i18n="nav_medicines">Medicines</a>
+
+					<a href="doctors.html" data-i18n="nav_doctors">Doctors</a>
+
+					<a href="diagnostics.html" data-i18n="nav_diagnostics">Diagnostics</a>
+
+					<a href="skincare.html" data-i18n="nav_skincare">Skincare</a>
+
+					<a href="baby-care.html" data-i18n="nav_babycare">Baby Care</a>
+
+					<a href="offers.html" data-i18n="nav_offers">Offers</a>
+
+					<a href="about.html" data-i18n="nav_about">About</a>
+
+					<a href="contact.html" data-i18n="nav_contact">Contact</a>
+
+					<!--
+          <button
+            class="language-switch"
+            id="language-switch"
+            type="button"
+            aria-label="Change language"
+          >
+            <span class="lang-en">EN</span>
+            <span class="lang-divider">/</span>
+            <span class="lang-bn">বাংলা</span>
+          </button>
+          -->
+
+					<a
+					  class="nav-whatsapp"
+					  href="https://wa.me/919831998054?text=Hello%20Swasthai%20Sampad%2C%20I%20need%20help."
+					  target="_blank"
+					  rel="noopener noreferrer"
+					  data-i18n="nav_whatsapp"
+          >
+						WhatsApp
+					</a>
+
+				</div>
+				<!-- MOBILE MENU BUTTON -->
+				<button
+				  class="mobile-menu-button"
+				  type="button"
+				  aria-label="Open menu"
+				  aria-expanded="false"
+>
+					☰
+				</button>
+
+				<!-- MOBILE MENU -->
+				<div class="mobile-menu">
+
+					<a href="index.html">Home</a>
+					<a href="medicines.html">Medicines</a>
+					<a href="doctors.html" class="active">Doctors</a>
+					<a href="diagnostics.html">Diagnostics</a>
+					<a href="skincare.html">Skincare</a>
+					<a href="baby-care.html">Baby Care</a>
+					<a href="offers.html">Offers</a>
+					<a href="about.html">About</a>
+					<a href="contact.html">Contact</a>
+
+					<a
+					  class="button primary full-width"
+					  href="https://wa.me/919831998054?text=Hello%20Swasthai%20Sampad%2C%20I%20need%20help."
+					  target="_blank"
+					  rel="noopener noreferrer"
+  >
+						WhatsApp Us
+					</a>
+
+				</div>
+
+			</nav>
+
+		</header>
+
+
+		<main>
+
+
+			<!-- =====================================================
+         HERO
+         ===================================================== -->
+
+			<section class="hero">
+
+				<div class="container hero-content">
+
+
+					<div class="hero-copy">
+
+
+						<p
+						  class="eyebrow"
+						  data-i18n="hero_eyebrow"
+          >
+							TRUSTED HEALTHCARE IN SERAMPORE
+						</p>
+
+
+						<h1 data-i18n="hero_title">
+
+							Your health.<br />
+
+							<span>
+								Our care.
+							</span>
+
+						</h1>
+
+
+						<p
+						  class="lead"
+						  data-i18n="hero_description"
+          >
+							Medicines, doctors and diagnostic services —
+							brought together to make everyday healthcare simpler.
+						</p>
+
+
+						<!-- OFFER -->
+
+						<div class="hero-offer">
+
+
+							<div>
+
+								<strong>
+									21%
+								</strong>
+
+								<span data-i18n="hero_offer_one">
+									FLAT DISCOUNT
+								</span>
+
+							</div>
+
+
+							<div class="offer-divider"></div>
+
+
+							<div>
+
+								<strong>
+									UP TO 25%
+								</strong>
+
+								<span data-i18n="hero_offer_two">
+									ON PURCHASE SLABS
+								</span>
+
+							</div>
+
+
+						</div>
+
+
+						<!-- ACTIONS -->
+
+						<div class="hero-actions">
+
+
+							<a
+							  class="button primary"
+							  href="medicines.html"
+							  data-i18n="hero_medicines_button"
+            >
+								Explore Medicines
+							</a>
+
+
+							<a
+							  class="button secondary"
+							  href="doctors.html"
+							  data-i18n="hero_doctor_button"
+            >
+								Find a Doctor
+							</a>
+
+
+						</div>
+
+
+					</div>
+
+
+					<!-- HERO CARD -->
+
+					<div class="hero-main-card">
+
+
+						<span class="mini-badge">
+							SWASTHAI SAMPAD
+						</span>
+
+
+						<h2 data-i18n="hero_card_title">
+
+							Three important<br />
+							healthcare needs.
+
+						</h2>
+
+
+						<!-- MEDICINES -->
+
+						<a
+						  href="medicines.html"
+						  class="hero-service-row"
+          >
+
+							<div class="hero-service-icon">
+								💊
+							</div>
+
+
+							<div>
+
+								<strong data-i18n="hero_card_medicine">
+									Medicines
+								</strong>
+
+								<span data-i18n="hero_card_medicine_text">
+									Branded medicines &amp; everyday healthcare
+								</span>
+
+							</div>
+
+
+							<span>
+								→
+							</span>
+
+						</a>
+
+
+						<!-- DOCTORS -->
+
+						<a
+						  href="doctors.html"
+						  class="hero-service-row"
+          >
+
+							<div class="hero-service-icon">
+								🩺
+							</div>
+
+
+							<div>
+
+								<strong data-i18n="hero_card_doctor">
+									Doctors
+								</strong>
+
+								<span data-i18n="hero_card_doctor_text">
+									Appointments at our polyclinic
+								</span>
+
+							</div>
+
+
+							<span>
+								→
+							</span>
+
+						</a>
+
+
+						<!-- DIAGNOSTICS -->
+
+						<a
+						  href="diagnostics.html"
+						  class="hero-service-row"
+          >
+
+							<div class="hero-service-icon">
+								🧪
+							</div>
+
+
+							<div>
+
+								<strong data-i18n="hero_card_diagnostics">
+									Diagnostics
+								</strong>
+
+								<span data-i18n="hero_card_diagnostics_text">
+									Help with diagnostic test bookings
+								</span>
+
+							</div>
+
+
+							<span>
+								→
+							</span>
+
+						</a>
+
+
+					</div>
+
+				</div>
+
+			</section>
+
+
+
+			<!-- =====================================================
+         TRUST STRIP
+         ===================================================== -->
+
+			<section class="trust-strip">
+
+				<div class="container trust-grid">
+
+
+					<div class="trust-item">
+
+						<span>
+							✓
+						</span>
+
+						<div>
+
+							<strong data-i18n="trust_medicines_title">
+								Branded Medicines
+							</strong>
+
+							<small data-i18n="trust_medicines_text">
+								Genuine pharmaceutical products
+							</small>
+
+						</div>
+
+					</div>
+
+
+					<div class="trust-item">
+
+						<span>
+							%
+						</span>
+
+						<div>
+
+							<strong data-i18n="trust_discount_title">
+								21% Flat Discount
+							</strong>
+
+							<small data-i18n="trust_discount_text">
+								Higher slabs up to 25%
+							</small>
+
+						</div>
+
+					</div>
+
+
+					<div class="trust-item">
+
+						<span>
+							+
+						</span>
+
+						<div>
+
+							<strong data-i18n="trust_clinic_title">
+								Polyclinic
+							</strong>
+
+							<small data-i18n="trust_clinic_text">
+								Doctors from multiple specialties
+							</small>
+
+						</div>
+
+					</div>
+
+
+					<div class="trust-item">
+
+						<span>
+							♥
+						</span>
+
+						<div>
+
+							<strong data-i18n="trust_diagnostic_title">
+								Diagnostic Support
+							</strong>
+
+							<small data-i18n="trust_diagnostic_text">
+								Booking assistance available
+							</small>
+
+						</div>
+
+					</div>
+
+
+				</div>
+
+			</section>
+			<!-- =====================================================
+     DIAGNOSTIC PARTNER
+===================================================== -->
+
+			<section class="diagnostic-partner-section">
+				<div class="container diagnostic-partner-inner">
+
+					<div class="diagnostic-partner-copy">
+						<span class="partner-label">
+							OUR DIAGNOSTIC PARTNER
+						</span>
+
+						<h2>
+							Diagnostic support with
+							<span>Suraksha Diagnostic</span>
+						</h2>
+
+						<p>
+							Need a blood test or another diagnostic service?
+							Contact Swasthai Sampad for booking assistance through
+							our associated Suraksha Diagnostic collection centre.
+						</p>
+
+						<a href="diagnostics.html" class="partner-link">
+							Explore Diagnostic Services <span aria-hidden="true">→</span>
+						</a>
+					</div>
+
+					<div class="diagnostic-partner-logo-card">
+						<span class="partner-card-label">
+							DIAGNOSTIC PARTNER
+						</span>
+
+						<img
+						  src="assets/images/suraksha-diagnostics-logo-transparent.png"
+						  alt="Suraksha Diagnostics logo"
+						  loading="lazy"
+      />
+
+						<p>Trusted diagnostic services</p>
+					</div>
+
+				</div>
+			</section>
+
+
+			<!-- =====================================================
+         SERVICES
+         ===================================================== -->
+
+			<section
+			  class="section"
+			  id="services"
+    >
+
+				<div class="container">
+
+
+					<div class="section-heading center">
+
+
+						<p
+						  class="section-tag"
+						  data-i18n="services_tag"
+          >
+							EXPLORE SWASTHAI SAMPAD
+						</p>
+
+
+						<h2
+						  class="section-title"
+						  data-i18n="services_title"
+          >
+							Healthcare, all in one place.
+						</h2>
+
+
+						<p
+						  class="section-intro"
+						  data-i18n="services_intro"
+          >
+							Explore each service in detail and contact us
+							directly whenever you need assistance.
+						</p>
+
+
+					</div>
+
+
+
+					<div class="service-grid">
+
+
+						<!-- MEDICINES -->
+
+						<article class="service-card">
+
+
+							<div class="service-icon">
+								💊
+							</div>
+
+
+							<span
+							  class="service-label"
+							  data-i18n="service_medicine_label"
+            >
+								PHARMACY
+							</span>
+
+
+							<h3 data-i18n="service_medicine_title">
+
+								Medicines &amp;<br />
+								Healthcare
+
+							</h3>
+
+
+							<p data-i18n="service_medicine_text">
+
+								Branded medicines for regular healthcare needs,
+								including monthly medicines, vitamins and family care.
+
+							</p>
+
+
+							<div class="service-highlights">
+
+								<span data-i18n="service_medicine_tag1">
+									Monthly medicines
+								</span>
+
+								<span data-i18n="service_medicine_tag2">
+									Diabetes
+								</span>
+
+								<span data-i18n="service_medicine_tag3">
+									BP
+								</span>
+
+								<span data-i18n="service_medicine_tag4">
+									Thyroid
+								</span>
+
+							</div>
+
+
+							<a
+							  href="medicines.html"
+							  class="service-link"
+							  data-i18n="service_medicine_link"
+            >
+								Explore medicines →
+							</a>
+
+
+						</article>
+
+
+
+						<!-- DOCTORS -->
+
+						<article class="service-card">
+
+
+							<div class="service-icon">
+								🩺
+							</div>
+
+
+							<span
+							  class="service-label"
+							  data-i18n="service_doctor_label"
+            >
+								POLYCLINIC
+							</span>
+
+
+							<h3 data-i18n="service_doctor_title">
+
+								Doctors &amp;<br />
+								Appointments
+
+							</h3>
+
+
+							<p data-i18n="service_doctor_text">
+
+								Consult doctors from different specialties
+								at our polyclinic. View doctors and appointment timings.
+
+							</p>
+
+
+							<div class="service-highlights">
+
+								<span data-i18n="service_doctor_tag1">
+									Orthopaedics
+								</span>
+
+								<span data-i18n="service_doctor_tag2">
+									General Medicine
+								</span>
+
+								<span data-i18n="service_doctor_tag3">
+									Gynaecology
+								</span>
+
+								<span data-i18n="service_doctor_tag4">
+									Nephrology
+								</span>
+
+							</div>
+
+
+							<a
+							  href="doctors.html"
+							  class="service-link"
+							  data-i18n="service_doctor_link"
+            >
+								View doctors →
+							</a>
+
+
+						</article>
+
+
+
+						<!-- DIAGNOSTICS -->
+
+						<article class="service-card">
+
+
+							<div class="service-icon">
+								🧪
+							</div>
+
+
+							<span
+							  class="service-label"
+							  data-i18n="service_diagnostic_label"
+            >
+								DIAGNOSTICS
+							</span>
+
+
+							<h3 data-i18n="service_diagnostic_title">
+
+								Tests &amp;<br />
+								Diagnostics
+
+							</h3>
+
+
+							<p data-i18n="service_diagnostic_text">
+
+								We help with bookings for diagnostic services
+								through our association with Suraksha Diagnostic.
+
+							</p>
+
+
+							<div class="service-highlights">
+
+								<span data-i18n="service_diagnostic_tag1">
+									Blood tests
+								</span>
+
+								<span data-i18n="service_diagnostic_tag2">
+									ECG
+								</span>
+
+								<span data-i18n="service_diagnostic_tag3">
+									Echo
+								</span>
+
+								<span data-i18n="service_diagnostic_tag4">
+									Imaging
+								</span>
+
+							</div>
+
+
+							<a
+							  href="diagnostics.html"
+							  class="service-link"
+							  data-i18n="service_diagnostic_link"
+            >
+								Explore diagnostics →
+							</a>
+
+
+						</article>
+
+
+					</div>
+
+				</div>
+
+			</section>
+
+
+
+			<!-- =====================================================
+         OFFERS
+         ===================================================== -->
+
+			<section class="section offers-preview">
+
+				<div class="container offers-preview-grid">
+
+
+					<div>
+
+
+						<p
+						  class="section-tag"
+						  data-i18n="offers_tag"
+          >
+							SAVE MORE
+						</p>
+
+
+						<h2
+						  class="section-title"
+						  data-i18n="offers_title"
+          >
+							Better savings on your medicine purchases.
+						</h2>
+
+
+						<p
+						  class="section-text"
+						  data-i18n="offers_text"
+          >
+							Start with our flat 21% discount and unlock
+							higher discounts through our purchase slabs.
+						</p>
+
+
+						<a
+						  href="offers.html"
+						  class="button primary"
+						  data-i18n="offers_button"
+          >
+							View all offers
+						</a>
+
+
+					</div>
+
+
+
+										<div class="mini-discount-grid">
+
+
+											<div>
+
+												<small data-i18n="offers_regular">
+													REGULAR
+												</small>
+
+												<strong>
+													21%
+												</strong>
+
+											</div>
+
+
+											<div>
+
+												<small data-i18n="offers_10k">
+													₹10K+
+												</small>
+
+												<strong>
+													22%
+												</strong>
+
+											</div>
+
+
+											<div>
+
+												<small data-i18n="offers_15k">
+													₹15K+
+												</small>
+
+												<strong>
+													23%
+												</strong>
+
+											</div>
+
+
+											<div>
+
+												<small data-i18n="offers_20k">
+													₹20K+
+												</small>
+
+												<strong>
+													24%
+												</strong>
+
+											</div>
+
+
+											<div class="featured">
+
+												<small data-i18n="offers_25k">
+													₹25K+
+												</small>
+
+												<strong>
+													25%
+												</strong>
+
+											</div>
+
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</section>
+
+
+
+							<!-- =====================================================
+					 SKINCARE
+					 ===================================================== -->
+
+							<section class="section beauty-preview">
+
+								<div class="container beauty-preview-grid">
+
+
+									<div>
+
+
+										<p
+										  class="section-tag"
+										  data-i18n="beauty_tag"
+					  >
+											SKINCARE &amp; HAIRCARE
+										</p>
+
+
+										<h2
+										  class="section-title"
+										  data-i18n="beauty_title"
+					  >
+											Everyday personal care,
+											with better value.
+										</h2>
+
+
+										<p
+										  class="section-text"
+										  data-i18n="beauty_text"
+					  >
+											Explore our growing skincare and haircare range,
+											with discounts of up to 30% on selected products.
+										</p>
+
+
+										<a
+										  href="skincare.html"
+										  class="button primary"
+										  data-i18n="beauty_button"
+					  >
+											Explore skincare
+										</a>
+
+
+									</div>
+
+
+									<div class="beauty-preview-card">
+
+
+										<span data-i18n="beauty_personal_care">
+											PERSONAL CARE
+										</span>
+
+
+										<strong data-i18n="beauty_up_to">
+											UP TO
+										</strong>
+
+
+										<b>
+											30%
+										</b>
+
+
+										<small data-i18n="beauty_discount_label">
+											OFF SELECTED PRODUCTS
+										</small>
+
+
+									</div>
+
+
+								</div>
+
+							</section>
+
+
+
+							<!-- =====================================================
+					 BABY CARE
+					 ===================================================== -->
+
+							<section class="section baby-preview">
+
+								<div class="container baby-preview-inner">
+
+
+									<div>
+
+
+										<p
+										  class="section-tag"
+										  data-i18n="baby_tag"
+					  >
+											BABY &amp; FAMILY CARE
+										</p>
+
+
+										<h2
+										  data-i18n="baby_title"
+					  >
+											Care for every generation.
+										</h2>
+
+
+										<p
+										  data-i18n="baby_text"
+					  >
+											Explore baby care, personal care and everyday
+											family essentials.
+										</p>
+
+
+									</div>
+
+
+									<a
+									  href="baby-care.html"
+									  class="button secondary-dark"
+									  data-i18n="baby_button"
+					>
+										Explore baby care →
+									</a>
+
+
+								</div>
+
+							</section>
+
+
+
+							<!-- =====================================================
+					 WHATSAPP CTA
+					 ===================================================== -->
+
+							<section class="section whatsapp-section">
+
+								<div class="container whatsapp-box">
+
+
+									<div>
+
+
+										<p
+										  class="section-tag"
+										  data-i18n="whatsapp_tag"
+					  >
+											NEED HELP?
+										</p>
+
+
+					</div>
+
+				</div>
+
+			</section>
+
+
+
+			<!-- =====================================================
+		  WHATSAPP CTA
+		  ===================================================== -->
+
+			<section class="section whatsapp-section">
+
+				<div class="container whatsapp-box">
+
+
+					<div>
+
+
+						<p
+						  class="section-tag"
+						  data-i18n="whatsapp_tag"
+          >
+							NEED HELP?
+						</p>
+
+
+						<h2
+						  data-i18n="whatsapp_title"
+          >
+							Just tell us what you need.
+						</h2>
+
+
+						<p
+						  data-i18n="whatsapp_text"
+          >
+							Send us a WhatsApp message for medicines,
+							doctor appointments, diagnostic tests or
+							personal-care products.
+						</p>
+
+
+					</div>
+
+
+					<a
+					  class="button primary"
+					  href="https://wa.me/919831998054?text=Hello%20Swasthai%20Sampad%2C%20I%20need%20some%20help."
+					  target="_blank"
+					  rel="noopener noreferrer"
+					  data-i18n="whatsapp_button"
+        >
+						💬 WhatsApp Swasthai Sampad
+					</a>
+
+
+				</div>
+
+			</section>
+
+
+
+			<!-- =====================================================
+         LOCATION
+         ===================================================== -->
+
+			<section class="section location-section">
+
+				<div class="container location-grid">
+
+
+					<div class="location-copy">
+
+
+						<p
+						  class="section-tag"
+						  data-i18n="location_tag"
+          >
+							FIND US
+						</p>
+
+
+						<h2
+						  class="section-title"
+						  data-i18n="location_title"
+          >
+							Visit Swasthai Sampad
+						</h2>
+
+
+						<p class="section-text">
+
+							<span data-i18n="location_address_1">38 Dey Street, Battala,</span><br />
+
+							<span data-i18n="location_address_2">Serampore, Hooghly,</span><br />
+
+							<span data-i18n="location_address_3">West Bengal – 712201</span>
+
+						</p>
+
+
+						<div class="location-actions">
+
+
+							<a
+							  class="button primary"
+							  href="https://maps.app.goo.gl/BrS9xjnbBw7h6PMb6"
+							  target="_blank"
+							  rel="noopener noreferrer"
+							  data-i18n="location_button"
+            >
+								📍 Get Directions
+							</a>
+
+
+							<a
+							  class="button secondary-dark"
+							  href="tel:+919831998054"
+							  data-i18n="location_call"
+            >
+								📞 Call Us
+							</a>
+
+
+						</div>
+
+
+					</div>
+
+
+					<div class="map-card">
+
+
+						<iframe
+						  src="https://www.google.com/maps?q=38+Dey+Street,+Battala,+Serampore,+Hooghly,+West+Bengal+712201&output=embed"
+						  width="100%"
+						  height="360"
+						  style="border:0;"
+						  allowfullscreen=""
+						  loading="lazy"
+						  referrerpolicy="no-referrer-when-downgrade"
+						  title="Swasthai Sampad location"
+          ></iframe>
+
+
+					</div>
+
+
+				</div>
+
+			</section>
+
+
+
+			<!-- =====================================================
+         CONTACT PREVIEW
+         ===================================================== -->
+
+			<section class="section contact-preview">
+
+				<div class="container">
+
+
+					<p
+					  class="section-tag"
+					  data-i18n="contact_tag"
+        >
+						VISIT US
+					</p>
+
+
+					<h2
+					  class="section-title"
+					  data-i18n="contact_title"
+        >
+						Swasthai Sampad
+					</h2>
+
+
+					<p
+					  class="section-text"
+					  data-i18n="contact_text"
+        >
+						Serampore, Hooghly, West Bengal
+					</p>
+
+
+					<div class="contact-preview-actions">
+
+
+						<a
+						  href="contact.html"
+						  class="button secondary-dark"
+						  data-i18n="contact_button"
+          >
+							Contact &amp; Location
+						</a>
+
+
+						<a
+						  href="tel:+919831998054"
+						  class="button primary"
+						  data-i18n="contact_call"
+          >
+							Call +91 98319 98054
+						</a>
+
+
+					</div>
+
+
+				</div>
+
+			</section>
+
+
+		</main>
+
+
+
+		<!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
+		<footer class="site-footer">
+
+
+			<div class="container footer-top">
+
+
+				<div class="footer-brand">
+
+
+					<div class="footer-brand-mark">
+						+
+					</div>
+
+
+					<div>
+
+						<strong>
+							Swasthai Sampad
+						</strong>
+
+						<span data-i18n="brand_tagline">
+							Healthcare • Pharmacy
+						</span>
+
+					</div>
+
+
+				</div>
+
+
+
+				<div class="footer-links">
+
+
+					<a
+					  href="index.html"
+					  data-i18n="nav_home"
+        >
+						Home
+					</a>
+
+
+					<a
+					  href="medicines.html"
+					  data-i18n="nav_medicines"
+        >
+						Medicines
+					</a>
+
+
+					<a
+					  href="doctors.html"
+					  data-i18n="nav_doctors"
+        >
+						Doctors
+					</a>
+
+
+					<a
+					  href="diagnostics.html"
+					  data-i18n="nav_diagnostics"
+        >
+						Diagnostics
+					</a>
+
+
+					<a
+					  href="skincare.html"
+					  data-i18n="nav_skincare"
+        >
+						Skincare
+					</a>
+
+
+					<a
+					  href="offers.html"
+					  data-i18n="nav_offers"
+        >
+						Offers
+					</a>
+
+
+					<a
+					  href="contact.html"
+					  data-i18n="nav_contact"
+        >
+						Contact
+					</a>
+
+
+				</div>
+
+
 			</div>
 
-			<div class="hero-actions">
-			  <a class="button primary" href="https://wa.me/919831088191?text=Hello%20Swasthai%20Sampad%20Medical%20Store%2C%20I%20want%20to%20know%20more%20about%20your%20offers." target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
-			  <a class="button secondary" href="tel:+919831088191">Call Us</a>
+
+
+			<div class="container footer-bottom">
+
+
+				<p>
+
+					©
+					<span id="year"></span>
+
+					Swasthai Sampad.
+
+					<span data-i18n="footer_rights">
+						All rights reserved.
+					</span>
+
+				</p>
+
+
+				<p
+				  data-i18n="footer_terms"
+      >
+					Terms &amp; Conditions Apply
+				</p>
+
+
 			</div>
 
-			<div class="hero-actions secondary-actions">
-			  <a class="button mini" href="#offers">View Offers</a>
-			</div>
-		  </div>
 
-		  <div class="hero-card">
-			<div class="mini-badge">Healthcare essentials</div>
-			<h3>Affordable Care</h3>
-			<ul>
-			  <li>Prescription medicines</li>
-			  <li>Vitamin and supplements</li>
-			  <li>Baby and personal care</li>
-			  <li>Daily wellness products</li>
-			</ul>
-		  </div>
-		</div>
-	  </section>
+		</footer>
 
-	  <section id="about" class="section intro">
-		<div class="container two-column">
-		  <div>
-			<p class="section-tag">About Us</p>
-			<h2>Your reliable medical partner.</h2>
-		  </div>
-		  <div>
-			<p>
-			  Swasthai Sampad Medical Store is dedicated to delivering dependable
-			  pharmaceutical care, trusted health advice, and everyday wellness
-			  solutions at fair prices. We combine professional service with
-			  affordable pricing to support the well-being of our customers.
-			</p>
-		  </div>
-		</div>
-	  </section>
 
-	  <section id="offers" class="section alt">
-		<div class="container">
-		  <p class="section-tag center">Special Offers</p>
-		  <h2 class="section-title center">Savings that support your health</h2>
 
-		  <div class="grid three-col">
-			<article class="offer-card">
-			  <div class="offer-icon">01</div>
-			  <h3>Flat 21% Discount</h3>
-			  <p>Everyday medicines and routine healthcare essentials at reduced pricing.</p>
-			</article>
+		<!-- ================= SCRIPTS ================= -->
 
-			<article class="offer-card highlight">
-			  <div class="offer-icon">02</div>
-			  <h3>Up to 25% OFF</h3>
-			  <p>Selected premium products, wellness supplements, and family care items.</p>
-			</article>
+		<script src="js/main.js"></script>
 
-			<article class="offer-card">
-			  <div class="offer-icon">03</div>
-			  <h3>Trusted Service</h3>
-			  <p>Qualified assistance, genuine products, and careful guidance for every purchase.</p>
-			</article>
-		  </div>
-		</div>
-	  </section>
+		<script src="js/language.js"></script>
 
-	  <section class="section categories">
-		<div class="container">
-		  <p class="section-tag">Popular Categories</p>
-		  <h2 class="section-title">Everything you need under one roof</h2>
 
-		  <div class="grid four-col">
-			<div class="category-box">Prescription Medicines</div>
-			<div class="category-box">Pain Relief</div>
-			<div class="category-box">Family Care</div>
-			<div class="category-box">Vitamins & Supplements</div>
-			<div class="category-box">Baby Essentials</div>
-			<div class="category-box">Personal Care</div>
-			<div class="category-box">First Aid</div>
-			<div class="category-box">Wellness Products</div>
-		  </div>
-		</div>
-	  </section>
+	</body>
 
-	  <section class="section benefits">
-		<div class="container benefit-content">
-		  <div class="benefit-copy">
-			<p class="section-tag">Why Choose Us</p>
-			<h2>Health solutions with honesty and care</h2>
-			<ul>
-			  <li>Authentic medicines and healthcare products</li>
-			  <li>Competitive pricing with seasonal promotions</li>
-			  <li>Friendly and professional service</li>
-			  <li>Convenient access to daily wellness essentials</li>
-			</ul>
-		  </div>
-
-		  <div class="stats-box">
-			<div>
-			  <strong>50000+</strong>
-			  <span>Products</span>
-			</div>
-			<div>
-			  <strong>21%</strong>
-			  <span>Flat Discount</span>
-			</div>
-			<div>
-			  <strong>25%</strong>
-			  <span>Max Offer</span>
-			</div>
-		  </div>
-		</div>
-	  </section>
-
-	  <section id="contact" class="section contact-section">
-		<div class="container contact-box">
-		  <div>
-			<p class="section-tag">Contact</p>
-			<h2>Visit Swasthai Sampad Medical Store</h2>
-		  </div>
-
-		  <div class="contact-details">
-			<p><strong>Address:</strong> Your local medical store address</p>
-			<p><strong>Phone:</strong> <a href="tel:+919831088191">+91 98310 88191</a></p>
-			<p><strong>WhatsApp:</strong> <a href="https://wa.me/919831088191?text=Hello%20Swasthai%20Sampad%20Medical%20Store%2C%20I%20need%20help%20with%20your%20products." target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></p>
-			<p><strong>Email:</strong> care@swasthaisampad.com</p>
-		  </div>
-		</div>
-	  </section>
-	</main>
-
-	<footer class="site-footer">
-	  <div class="container footer-inner">
-		<p>© <span id="year"></span> Swasthai Sampad Medical Store</p>
-		<p>Terms & Conditions Apply</p>
-	  </div>
-	</footer>
-
-	<script src="js/main.js"></script>
-  </body>
 </html>
-
-
-

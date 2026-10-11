@@ -1,0 +1,29 @@
+[
+  {
+	"category": "General Medicines",
+	"items": [
+	  "Pain relief tablets",
+	  "Vitamin supplements",
+	  "Cold and flu essentials",
+	  "First-aid basics"
+	]
+  },
+  {
+	"category": "Skincare",
+	"items": [
+	  "Hydrating face creams",
+	  "Sunscreens",
+	  "Daily skin protection",
+	  "Sensitive skin care"
+	]
+  },
+  {
+	"category": "Baby Care",
+	"items": [
+	  "Baby hygiene essentials",
+	  "Feeding accessories",
+	  "Mild lotions",
+	  "Daily comfort care"
+	]
+  }
+]

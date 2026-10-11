@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 150" role="img" aria-labelledby="title desc">
+  <title id="title">Mamaearth</title>
+  <desc id="desc">Mamaearth wordmark in blue and green.</desc>
+  <text x="22" y="103" font-family="Arial Rounded MT Bold, Trebuchet MS, Arial, sans-serif" font-size="91" font-weight="700" letter-spacing="-4">
+    <tspan fill="#00AEEF">mama</tspan><tspan fill="#80C342">earth</tspan>
+  </text>
+  <text x="638" y="49" font-family="Arial, sans-serif" font-size="19" font-weight="600" fill="#80C342">™</text>
+</svg>

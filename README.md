@@ -1,19 +1,32 @@
 # Swasthai Sampad
 
-A simple static website structure intended for GitHub Pages deployment.
+A static healthcare storefront with dedicated pages for medicines, doctors, diagnostics, skincare, baby care, offers, and contact information.
 
 ## Structure
 
-- `index.html` — main page
-- `css/style.css` — styling
-- `js/main.js` — small scripted enhancements
-- `assets/images/` — image files
-- `assets/icons/` — icon files
+- `index.html` — home page
+- `medicines.html` — medicines and wellness products
+- `doctors.html` — doctor profiles and consultation page
+- `diagnostics.html` — diagnostic services and testing packages
+- `skincare.html` — skincare essentials
+- `baby-care.html` — baby care and family essentials
+- `offers.html` — current deals and seasonal offers
+- `about.html` — company overview and mission
+- `contact.html` — contact details and enquiry form
+- `css/style.css` — shared styling
+- `js/main.js` — shared interactions
+- `assets/images/` — image folders for banners, products, and branding
+- `assets/icons/` — reusable icons
+- `data/doctors.json` — doctor information source
+- `data/products.json` — product catalog data
+- `robots.txt` — crawler instructions
+- `sitemap.xml` — sitemap for search engines
+- `llms.txt` — AI/discovery page indexing summary
 
 ## Deployment
 
 This project can be deployed as a static site using GitHub Pages.
 
 1. Push this repository to GitHub.
-2. In the repository settings, enable GitHub Pages.
-3. Choose the root folder or a docs folder for deployment.
+2. Open the repository settings.
+3. Enable GitHub Pages and choose the root folder for deployment.

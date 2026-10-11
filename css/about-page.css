@@ -1,0 +1,498 @@
+/* =========================================================
+   SWASTHAI SAMPAD ABOUT PAGE
+   Page-specific styles. Keeps css/style.css intact.
+========================================================= */
+
+.about-page {
+  --about-teal: #0D6E6D;
+  --about-deep: #073F3E;
+  --about-dark: #0A504F;
+  --about-gold: #F3B33D;
+  --about-pale: #EAF7F6;
+  --about-ink: #1E2A2D;
+  --about-muted: #5D6B6F;
+}
+
+.about-page .about-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(58px, 7.5vw, 104px) 0 clamp(64px, 8vw, 112px);
+  color: #fff;
+  background:
+    radial-gradient(ellipse at 78% 18%, rgba(243,179,61,.22), transparent 29%),
+    linear-gradient(125deg, #063D3C 0%, #0A504F 47%, #0D6E6D 100%);
+}
+
+.about-page .about-hero::after {
+  content: "";
+  position: absolute;
+  inset: auto -8% -190px -8%;
+  z-index: -1;
+  height: 300px;
+  border: 1px solid rgba(255,255,255,.11);
+  border-radius: 50%;
+  box-shadow: 0 -22px 0 rgba(255,255,255,.025), 0 -44px 0 rgba(255,255,255,.02);
+}
+
+.about-hero-glow {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.about-hero-glow-one {
+  width: 460px;
+  height: 460px;
+  right: -90px;
+  top: -180px;
+  border: 1px solid rgba(243,179,61,.16);
+  box-shadow: 0 0 0 34px rgba(255,255,255,.018), 0 0 0 70px rgba(255,255,255,.014);
+}
+
+.about-hero-glow-two {
+  width: 210px;
+  height: 210px;
+  left: 36%;
+  bottom: -150px;
+  background: rgba(243,179,61,.06);
+  filter: blur(4px);
+}
+
+.about-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, .8fr);
+  gap: clamp(36px, 7vw, 100px);
+  align-items: center;
+  position: relative;
+}
+
+.about-hero-copy { max-width: 720px; }
+
+.about-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 22px;
+  color: var(--about-gold);
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .15em;
+  line-height: 1.5;
+}
+
+.about-kicker-star { font-size: 1.1rem; }
+
+.about-hero-copy h1 {
+  margin: 0;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(2.6rem, 5vw, 4.7rem);
+  font-weight: 800;
+  letter-spacing: -.055em;
+  line-height: 1.04;
+  max-width: 760px;
+}
+
+.about-hero-copy h1 span {
+  color: var(--about-gold);
+}
+
+.about-hero-description {
+  max-width: 650px;
+  margin: 25px 0 0;
+  color: rgba(255,255,255,.82);
+  font-size: clamp(1rem, 1.35vw, 1.12rem);
+  line-height: 1.85;
+}
+
+.about-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 31px;
+}
+
+.about-hero-actions .button.primary {
+  background: var(--about-gold);
+  border-color: var(--about-gold);
+  color: var(--about-deep);
+  font-weight: 800;
+  box-shadow: 0 12px 28px rgba(0,0,0,.14);
+}
+
+.about-hero-actions .button.primary:hover { transform: translateY(-2px); }
+
+.about-outline-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 18px;
+  border: 1px solid rgba(255,255,255,.38);
+  border-radius: 12px;
+  color: #fff;
+  font-size: .94rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background .2s ease, border-color .2s ease;
+}
+
+.about-outline-button:hover {
+  background: rgba(255,255,255,.09);
+  border-color: var(--about-gold);
+}
+
+.about-trust-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 27px;
+  color: rgba(255,255,255,.74);
+  font-size: .9rem;
+  line-height: 1.6;
+}
+
+.about-trust-check {
+  display: inline-grid;
+  width: 23px;
+  height: 23px;
+  flex: 0 0 23px;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(243,179,61,.16);
+  color: var(--about-gold);
+  font-weight: 800;
+}
+
+/* Anniversary display */
+.about-page .anniversary-card {
+  position: relative;
+  width: 100%;
+  max-width: 390px;
+  justify-self: end;
+  padding: 29px 28px 25px;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,.28);
+  border-radius: 30px;
+  background: linear-gradient(150deg, rgba(255,255,255,.16), rgba(255,255,255,.07));
+  box-shadow: 0 28px 80px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.16);
+  backdrop-filter: blur(9px);
+}
+
+.anniversary-card::before {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid rgba(243,179,61,.3);
+  border-radius: 50%;
+  box-shadow: 0 0 0 18px rgba(243,179,61,.04), 0 0 0 38px rgba(243,179,61,.025);
+  pointer-events: none;
+}
+
+.anniversary-card > * { position: relative; }
+
+.anniversary-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  color: rgba(255,255,255,.83);
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .22em;
+}
+
+.anniversary-star { color: var(--about-gold); font-size: 1rem; }
+
+.anniversary-number-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin: 2px 0 0;
+}
+
+.anniversary-number {
+  display: block;
+  color: var(--about-gold);
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(9rem, 16vw, 13.7rem);
+  font-weight: 800;
+  letter-spacing: -.1em;
+  line-height: .98;
+  text-shadow: 0 10px 34px rgba(0,0,0,.15);
+}
+
+.anniversary-years {
+  margin-top: 26px;
+  color: #fff;
+  font-size: .85rem;
+  font-weight: 800;
+  letter-spacing: .13em;
+  line-height: 1.55;
+  text-align: left;
+}
+
+.anniversary-gold-rule {
+  width: 65px;
+  height: 3px;
+  margin: 16px auto 13px;
+  border-radius: 4px;
+  background: var(--about-gold);
+}
+
+.anniversary-date {
+  margin: 0;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+
+.anniversary-date span { color: var(--about-gold); padding: 0 6px; }
+
+.anniversary-card-caption {
+  margin: 8px 0 0;
+  color: rgba(255,255,255,.72);
+  font-size: .87rem;
+  line-height: 1.5;
+}
+
+.anniversary-seal {
+  display: inline-block;
+  margin-top: 21px;
+  padding: 9px 14px;
+  border: 1px solid rgba(243,179,61,.48);
+  border-radius: 9px;
+  color: rgba(255,255,255,.84);
+  font-size: .57rem;
+  font-weight: 700;
+  letter-spacing: .15em;
+  line-height: 1.65;
+}
+
+.anniversary-seal strong { color: var(--about-gold); font-weight: 800; }
+
+/* Four-column milestone strip */
+.about-milestone-strip {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  border-bottom: 1px solid #DDE9E8;
+  box-shadow: 0 16px 38px rgba(10,80,79,.055);
+}
+
+.about-milestone-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+  gap: clamp(12px, 2.3vw, 30px);
+  align-items: center;
+  min-height: 120px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.about-milestone { display: flex; flex-direction: column; gap: 5px; }
+.about-milestone strong {
+  color: var(--about-teal);
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(1.2rem, 2vw, 1.75rem);
+  font-weight: 800;
+  letter-spacing: -.035em;
+  line-height: 1.15;
+}
+.about-milestone:first-child strong,
+.about-milestone:nth-of-type(3) strong { color: #BA8215; }
+.about-milestone span { color: var(--about-muted); font-size: .8rem; line-height: 1.45; }
+.about-milestone-separator { width: 1px; height: 42px; background: #DDE9E8; }
+
+.about-section-heading { max-width: 800px; margin-left: auto; margin-right: auto; margin-bottom: 39px; }
+.about-section-heading .section-title { letter-spacing: -.04em; }
+.about-story-section { padding-top: clamp(62px, 7vw, 90px); padding-bottom: clamp(62px, 7vw, 90px); }
+
+.about-story-grid,
+.about-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.about-story-card {
+  min-height: 280px;
+  padding: 29px 28px;
+  border: 1px solid #DDE9E8;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(10,80,79,.045);
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+
+.about-story-card:hover,
+.about-service-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(13,110,109,.3);
+  box-shadow: 0 20px 45px rgba(10,80,79,.10);
+}
+
+.about-story-card-featured {
+  border-color: rgba(243,179,61,.55);
+  background: linear-gradient(150deg, #FFF9EA, #fff 75%);
+}
+
+.about-story-icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  margin-bottom: 22px;
+  border-radius: 15px;
+  background: var(--about-pale);
+  color: var(--about-teal);
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.about-story-card-featured .about-story-icon { background: #FCEBC7; color: #91620B; }
+.about-card-overline { display: block; margin-bottom: 9px; color: var(--about-teal); font-size: .68rem; font-weight: 800; letter-spacing: .12em; line-height: 1.5; }
+.about-story-card h3,
+.about-service-card h3 { margin: 0 0 12px; color: var(--about-ink); font-family: "Manrope", sans-serif; font-size: 1.25rem; line-height: 1.35; }
+.about-story-card p,
+.about-service-card p { margin: 0; color: var(--about-muted); font-size: .94rem; line-height: 1.8; }
+
+.about-services-section { background: #F5FAF9; padding-top: clamp(60px, 7vw, 84px); padding-bottom: clamp(60px, 7vw, 84px); }
+.about-service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 27px 26px 25px;
+  border: 1px solid #DDE9E8;
+  border-radius: 21px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(10,80,79,.045);
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+
+.about-service-top { display: flex; align-items: center; justify-content: space-between; width: 100%; margin-bottom: 22px; }
+.about-service-icon { display: grid; width: 54px; height: 54px; place-items: center; border-radius: 17px; background: var(--about-pale); font-size: 1.6rem; }
+.about-service-number { color: #B9C9C7; font-family: "Manrope", sans-serif; font-size: 1.15rem; font-weight: 800; }
+.about-service-card:nth-child(2) .about-service-icon { background: #FFF1D6; }
+.about-service-card:nth-child(3) .about-service-icon { background: #F1EAFE; }
+.about-service-highlight { margin-top: 20px; padding: 10px 12px; border-radius: 10px; background: #EAF7F6; color: var(--about-dark); font-size: .78rem; font-weight: 800; line-height: 1.5; }
+.about-service-highlight span { color: #B9C9C7; padding: 0 4px; }
+.about-text-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 23px; color: var(--about-teal); font-size: .9rem; font-weight: 800; text-decoration: none; }
+.about-text-link:hover { color: #084948; }
+
+.about-beauty-band {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(48px, 6vw, 72px) 0;
+  background: linear-gradient(115deg, #073F3E 0%, #0D6E6D 60%, #146C65 100%);
+  color: white;
+}
+
+.about-beauty-band::after {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  right: -100px;
+  top: -160px;
+  border: 1px solid rgba(243,179,61,.2);
+  border-radius: 50%;
+  box-shadow: 0 0 0 30px rgba(255,255,255,.025), 0 0 0 60px rgba(255,255,255,.018);
+  pointer-events: none;
+}
+
+.about-beauty-band-inner { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, .75fr); gap: 60px; align-items: center; position: relative; z-index: 1; }
+.about-band-kicker { margin: 0 0 14px; color: var(--about-gold); font-size: .73rem; font-weight: 800; letter-spacing: .14em; }
+.about-beauty-copy h2 { max-width: 560px; margin: 0; color: white; font-family: "Manrope", sans-serif; font-size: clamp(2rem, 4vw, 3.2rem); letter-spacing: -.045em; line-height: 1.12; }
+.about-beauty-copy > p:last-child { max-width: 550px; margin: 19px 0 0; color: rgba(255,255,255,.77); line-height: 1.8; }
+.about-offer-stack { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; }
+.about-offer-tile { display: flex; flex-direction: column; gap: 8px; min-height: 130px; padding: 20px 18px; border: 1px solid rgba(255,255,255,.2); border-radius: 16px; background: rgba(255,255,255,.09); }
+.about-offer-tile strong { color: rgba(255,255,255,.9); font-size: .8rem; letter-spacing: .04em; }
+.about-offer-tile strong b { color: var(--about-gold); font-family: "Manrope", sans-serif; font-size: 2rem; letter-spacing: -.05em; }
+.about-offer-tile span { color: rgba(255,255,255,.76); font-size: .78rem; line-height: 1.55; }
+.about-offer-tile-gold { background: rgba(243,179,61,.13); border-color: rgba(243,179,61,.38); }
+.about-band-link { display: flex; align-items: center; justify-content: space-between; gap: 10px; grid-column: span 1; padding: 12px 14px; border-radius: 10px; background: rgba(255,255,255,.08); color: white; font-size: .82rem; font-weight: 700; text-decoration: none; }
+.about-band-link:hover { background: rgba(255,255,255,.15); color: var(--about-gold); }
+
+.about-values-section { padding-top: clamp(60px, 7vw, 86px); padding-bottom: clamp(60px, 7vw, 86px); }
+.about-values-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.about-value-item { display: flex; gap: 17px; align-items: flex-start; padding-top: 21px; border-top: 1px solid #DDE9E8; }
+.about-value-item > span { color: #C08B21; font-family: "Manrope", sans-serif; font-size: 1rem; font-weight: 800; }
+.about-value-item h3 { margin: 0 0 8px; color: var(--about-ink); font-family: "Manrope", sans-serif; font-size: 1.05rem; line-height: 1.4; }
+.about-value-item p { margin: 0; color: var(--about-muted); font-size: .9rem; line-height: 1.75; }
+
+.about-contact-cta { padding: 0 0 68px; }
+.about-contact-cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 36px; padding: clamp(30px, 4.5vw, 52px); border: 1px solid rgba(243,179,61,.45); border-radius: 25px; background: linear-gradient(120deg, #FFF8E9, #FFFDF8); box-shadow: 0 17px 45px rgba(10,80,79,.07); }
+.about-kicker-light { margin-bottom: 12px; color: #9A6C13; }
+.about-contact-cta h2 { max-width: 700px; margin: 0; color: var(--about-ink); font-family: "Manrope", sans-serif; font-size: clamp(1.8rem, 3vw, 2.55rem); letter-spacing: -.04em; line-height: 1.18; }
+.about-contact-cta p:not(.about-kicker) { max-width: 650px; margin: 13px 0 0; color: var(--about-muted); line-height: 1.75; }
+.about-contact-cta .button.primary { flex: 0 0 auto; background: var(--about-teal); border-color: var(--about-teal); color: white; font-weight: 800; }
+
+.about-visit-section { padding-top: 0; }
+.about-visit-card { display: grid; grid-template-columns: auto minmax(0,1fr) auto; align-items: center; gap: 24px; padding: 28px; border: 1px solid #DDE9E8; border-radius: 20px; background: white; box-shadow: 0 10px 30px rgba(10,80,79,.045); }
+.about-visit-mark { display: grid; width: 58px; height: 58px; place-items: center; border-radius: 18px; background: var(--about-gold); color: var(--about-dark); font-size: 2rem; font-weight: 800; }
+.about-visit-copy .section-tag { margin: 0 0 6px; }
+.about-visit-copy h2 { margin: 0; color: var(--about-ink); font-family: "Manrope", sans-serif; font-size: 1.35rem; line-height: 1.4; }
+.about-visit-copy p:last-child { margin: 6px 0 0; color: var(--about-muted); font-size: .9rem; line-height: 1.6; }
+.about-visit-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+
+/* Responsive */
+@media (max-width: 980px) {
+  .about-hero-grid { grid-template-columns: minmax(0, 1fr) minmax(255px, .8fr); gap: 35px; }
+  .anniversary-card { padding: 24px 20px 22px; }
+  .anniversary-number { font-size: clamp(8rem, 15vw, 10rem); }
+  .about-milestone-grid { gap: 15px; }
+  .about-milestone span { font-size: .74rem; }
+  .about-beauty-band-inner { gap: 32px; }
+  .about-visit-card { grid-template-columns: auto minmax(0,1fr); }
+  .about-visit-actions { grid-column: 2; }
+}
+
+@media (max-width: 760px) {
+  .about-page .about-hero { padding: 52px 0 58px; }
+  .about-hero-grid { grid-template-columns: 1fr; gap: 34px; }
+  .about-hero-copy h1 { font-size: clamp(2.55rem, 10vw, 4rem); }
+  .about-hero-description { font-size: .98rem; }
+  .anniversary-card { max-width: 350px; justify-self: center; }
+  .anniversary-number { font-size: 10.5rem; }
+  .about-milestone-grid { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 21px 24px; padding-top: 25px; padding-bottom: 25px; }
+  .about-milestone-separator { display: none; }
+  .about-milestone { padding-left: 13px; border-left: 2px solid #F3B33D; }
+  .about-story-grid, .about-services-grid { grid-template-columns: 1fr; gap: 16px; }
+  .about-story-card { min-height: 0; padding: 24px; }
+  .about-service-card { padding: 24px; }
+  .about-section-heading { margin-bottom: 28px; }
+  .about-beauty-band-inner { grid-template-columns: 1fr; gap: 28px; }
+  .about-offer-stack { gap: 10px; }
+  .about-values-grid { grid-template-columns: 1fr; gap: 18px; }
+  .about-contact-cta { padding-bottom: 48px; }
+  .about-contact-cta-inner { align-items: flex-start; flex-direction: column; gap: 23px; border-radius: 19px; }
+  .about-contact-cta .button.primary { width: 100%; justify-content: center; }
+  .about-visit-card { grid-template-columns: auto minmax(0,1fr); padding: 22px; gap: 17px; }
+  .about-visit-mark { width: 48px; height: 48px; border-radius: 14px; font-size: 1.7rem; }
+  .about-visit-actions { grid-column: 1 / -1; }
+}
+
+@media (max-width: 420px) {
+  .about-hero-actions { align-items: stretch; flex-direction: column; }
+  .about-hero-actions .button, .about-outline-button { width: 100%; }
+  .anniversary-card { padding: 24px 15px 21px; }
+  .anniversary-number { font-size: 8.8rem; }
+  .anniversary-years { font-size: .75rem; }
+  .about-offer-stack { grid-template-columns: 1fr; }
+  .about-band-link { grid-column: auto; }
+  .about-visit-card { grid-template-columns: 1fr; }
+  .about-visit-actions { grid-column: auto; flex-direction: column; }
+  .about-visit-actions .button { width: 100%; justify-content: center; }
+}

@@ -1,0 +1,26 @@
+[
+  {
+	"name": "Dr. Anjali Patel",
+	"specialty": "General Physician",
+	"timing": "Mon-Sat | 9:00 AM - 6:00 PM",
+	"location": "Swasthai Sampad Clinic",
+	"rating": "4.9/5",
+	"availability": "Walk-in + Appointment"
+  },
+  {
+	"name": "Dr. Rakesh Verma",
+	"specialty": "Dermatologist",
+	"timing": "Tue-Sun | 10:00 AM - 5:00 PM",
+	"location": "Skin & Wellness Center",
+	"rating": "4.8/5",
+	"availability": "Consultation booking"
+  },
+  {
+	"name": "Dr. Neha Sharma",
+	"specialty": "Pediatrician",
+	"timing": "Mon-Fri | 9:30 AM - 4:30 PM",
+	"location": "Family Health Desk",
+	"rating": "4.9/5",
+	"availability": "Child care consultations"
+  }
+]

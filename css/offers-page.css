@@ -1,0 +1,27 @@
+/* Page-specific additions; uses the shared Swasthai Sampad theme. */
+.offers-hero .page-hero-inner { max-width: 900px; }
+.offers-hero .page-hero-inner > p:last-of-type { max-width: 760px; }
+.offers-hero-actions, .community-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+.medicine-discount-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; margin-top: 28px; }
+.medicine-discount-card { background: #fff; border: 1px solid #DDE9E8; border-radius: 18px; padding: 22px 16px; text-align: center; box-shadow: 0 8px 24px rgba(10,80,79,.05); }
+.medicine-discount-card .discount-caption { display: block; color: #5D6B6F; font-size: .75rem; font-weight: 700; min-height: 2.2em; }
+.medicine-discount-card strong { display: block; color: #0D6E6D; font-family: "Manrope", sans-serif; font-size: clamp(1.8rem, 3vw, 2.6rem); line-height: 1.2; margin: 8px 0; }
+.medicine-discount-card p { margin: 0; color: #5D6B6F; font-size: .86rem; line-height: 1.5; }
+.medicine-discount-featured { background: #FFF3D9; border-color: #F3B33D; }
+.medicine-discount-featured strong { color: #0A504F; }
+.offer-note { color: #5D6B6F; font-size: .88rem; line-height: 1.7; margin-top: 18px; }
+.text-link { display: inline-flex; gap: 8px; margin-top: 20px; color: #0D6E6D; font-weight: 800; text-decoration: none; }
+.text-link:hover { color: #0A504F; }
+.offers-medicine-section { background: #F7FAFA; }
+.offers-beauty-section { background: #fff; }
+.offers-diagnostics-section { background: #EAF7F6; }
+.offers-family-section { background: #F7FAFA; }
+.beauty-offer-card h2 { margin-top: 14px; }
+.beauty-offer-featured { border-color: #F3B33D; box-shadow: 0 10px 28px rgba(243,179,61,.12); }
+.offer-feature-card .button { margin-top: 10px; }
+.doctor-offer-list li { margin-bottom: 9px; }
+.community-card { background: #EAF7F6; }
+.community-actions .button { margin-top: 0; }
+.cta-banner > div p:last-child { max-width: 700px; line-height: 1.7; }
+@media (max-width: 900px) { .medicine-discount-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .medicine-discount-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; } .medicine-discount-card { padding: 18px 12px; } .medicine-discount-grid .medicine-discount-featured { grid-column: 1 / -1; } .offers-hero-actions, .community-actions { flex-direction: column; } .offers-hero-actions .button, .community-actions .button { width: 100%; justify-content: center; } }

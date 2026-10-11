@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 180" role="img" aria-labelledby="title desc">
+  <title id="title">Plum</title>
+  <desc id="desc">Plum brand wordmark in purple with a small fruit accent.</desc>
+  <g fill="#5B168B">
+    <text x="24" y="126" font-family="Georgia, 'Times New Roman', serif" font-size="132" font-weight="400" letter-spacing="-7">plum</text>
+    <text x="337" y="47" font-family="Georgia, 'Times New Roman', serif" font-size="29" font-weight="400">be good</text>
+    <text x="456" y="42" font-family="Arial, sans-serif" font-size="13">®</text>
+  </g>
+  <path d="M244 28 C256 12 278 9 295 18 C278 19 262 26 251 39 Z" fill="#5B168B"/>
+</svg>

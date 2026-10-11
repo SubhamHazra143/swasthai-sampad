@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="js/main.js"></script>
+  <script src="js/language.js"></script>
+
+  <title>Doctors & Appointments | Swasthai Sampad</title>
+
+  <meta
+    name="description"
+    content="View doctors and consultation schedules at the Swasthai Sampad polyclinic in Serampore. Appointments must be pre-booked one day in advance."
+  />
+
+  <link rel="canonical" href="https://swasthaisampad.in/doctors.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="site-header">
+
+    <nav class="container nav">
+
+      <a href="index.html" class="brand-wrap">
+
+        <div class="brand-mark">+</div>
+
+        <div class="brand-text">
+          <span class="brand-name">Swasthai Sampad</span>
+          <small data-i18n="brand_tagline">Healthcare • Pharmacy</small>
+        </div>
+
+      </a>
+
+		<div class="nav-menu">
+
+			<a href="index.html" data-i18n="nav_home">Home</a>
+
+			<a href="medicines.html" data-i18n="nav_medicines">Medicines</a>
+
+			<a href="doctors.html" class="active" data-i18n="nav_doctors">Doctors</a>
+
+			<a href="diagnostics.html" data-i18n="nav_diagnostics">Diagnostics</a>
+
+			<a href="skincare.html" data-i18n="nav_skincare">Skincare</a>
+
+			<a href="baby-care.html" data-i18n="nav_babycare">Baby Care</a>
+
+			<a href="offers.html" data-i18n="nav_offers">Offers</a>
+
+			<a href="about.html" data-i18n="nav_about">About</a>
+
+			<a href="contact.html" data-i18n="nav_contact">Contact</a>
+
+			<!--
+          <button
+            class="language-switch"
+            id="language-switch"
+            type="button"
+            aria-label="Change language"
+          >
+            <span class="lang-en">EN</span>
+            <span class="lang-divider">/</span>
+            <span class="lang-bn">বাংলা</span>
+          </button>
+          -->
+
+			<a
+			  class="nav-whatsapp"
+			  href="https://wa.me/919831998054?text=Hello%20Swasthai%20Sampad%2C%20I%20need%20help."
+			  target="_blank"
+			  rel="noopener noreferrer"
+			  data-i18n="nav_whatsapp"
+          >
+				WhatsApp
+			</a>
+
+		</div>
+
+		<!-- MOBILE MENU BUTTON -->
+		<button
+		  class="mobile-menu-button"
+		  type="button"
+		  aria-label="Open menu"
+		  aria-expanded="false"
+>
+			☰
+		</button>
+
+		<!-- MOBILE MENU -->
+		<div class="mobile-menu">
+
+			<a href="index.html">Home</a>
+			<a href="medicines.html">Medicines</a>
+			<a href="doctors.html" class="active">Doctors</a>
+			<a href="diagnostics.html">Diagnostics</a>
+			<a href="skincare.html">Skincare</a>
+			<a href="baby-care.html">Baby Care</a>
+			<a href="offers.html">Offers</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+
+			<a
+			  class="button primary full-width"
+			  href="https://wa.me/919831998054?text=Hello%20Swasthai%20Sampad%2C%20I%20need%20help."
+			  target="_blank"
+			  rel="noopener noreferrer"
+  >
+				WhatsApp Us
+			</a>
+
+		</div>
+
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- ================= PAGE HERO ================= -->
+
+    <section class="page-hero doctors-page-hero">
+
+      <div class="container page-hero-content">
+
+        <p class="eyebrow" data-i18n="doctors_eyebrow">
+          SWASTHAI SAMPAD POLYCLINIC
+        </p>
+
+        <h1 data-i18n="doctors_title">
+          Consult the right
+          <span>doctor for your needs.</span>
+        </h1>
+
+        <p data-i18n="doctors_subtitle">
+          Explore our current consultation schedule and
+          request an appointment directly through WhatsApp.
+        </p>
+
+        <div class="appointment-notice">
+
+          <span class="notice-icon">!</span>
+
+          <div>
+            <strong data-i18n="doctor_notice_title">
+              All appointments must be pre-booked at least one day in advance.
+            </strong>
+
+            <small data-i18n="doctor_notice_small">
+              Doctor availability and timings should be confirmed before your visit.
+            </small>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= DOCTORS + BOOKING ================= -->
+
+    <section class="section doctors-main-section">
+
+      <div class="container doctors-layout">
+
+        <!-- ================= DOCTOR LIST ================= -->
+
+        <div class="doctor-list-column">
+
+          <div class="section-heading">
+
+            <p class="section-tag">
+              Consultation Schedule
+            </p>
+
+            <h2 class="section-title">
+              Our doctors
+            </h2>
+
+            <p class="section-intro left">
+              Select a doctor to see the available consultation
+              days and timings. Weekly doctors can be selected
+              directly for an appointment request.
+            </p>
+
+          </div>
+
+
+          <!-- WEEKLY DOCTORS -->
+
+          <div class="doctor-group">
+
+            <div class="doctor-group-title">
+              <span>WEEKLY CONSULTATIONS</span>
+            </div>
+
+
+            <!-- Dr Manisha Ray -->
+
+            <article class="doctor-row">
+
+              <div class="doctor-row-main">
+
+                <div class="doctor-avatar">
+                  MR
+                </div>
+
+                <div class="doctor-info">
+
+                  <h3>
+                    Dr. Manisha Ray
+                  </h3>
+
+                  <p class="doctor-specialty">
+                    E.N.T
+                  </p>
+
+                  <div class="doctor-schedule">
+
+                    <span>
+                      <b>Days</b>
+                      Tuesday &amp; Friday
+                    </span>
+
+                    <span>
+                      <b>Time</b>
+                      2:00 PM
+                    </span>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <button
+                type="button"
+                class="doctor-book-button"
+                data-doctor="Dr. Manisha Ray"
+                data-specialty="E.N.T"
+              >
+                Book
+              </button>
+
+            </article>
+
+
+            <!-- Dr Abhisekh Reja -->
+
+            <article class="doctor-row">
+
+              <div class="doctor-row-main">
+
+                <div class="doctor-avatar">
+                  AR
+                </div>
+
+                <div class="doctor-info">
+
+                  <h3>
+                    Dr. Abhisekh Reja
+                  </h3>
+
+                  <p class="doctor-specialty">
+                    General Medicine
+                  </p>
+
+                  <div class="doctor-schedule">
+
+                    <span>
+                      <b>Day</b>
+                      Saturday
+                    </span>
+
+                    <span>
+                      <b>Time</b>
+                      7:30
+                    </span>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <button
+                type="button"
+                class="doctor-book-button"
+                data-doctor="Dr. Abhisekh Reja"
+                data-specialty="General Medicine"
+              >
+                Book
+              </button>
+
+            </article>
+
+
+            <!-- Dr Vivek Shaw -->
+
+            <article class="doctor-row">
+
+              <div class="doctor-row-main">
+
+                <div class="doctor-avatar">
+                  VS
+                </div>
+
+                <div class="doctor-info">
+
+                  <h3>
+                    Dr. Vivek Shaw
+                  </h3>
+
+                  <p class="doctor-specialty">
+                    Urologist
+                  </p>
+
+                  <div class="doctor-schedule">
+
+                    <span>
+                      <b>Day</b>
+                      Monday
+                    </span>
+
+                    <span>
+                      <b>Time</b>
+                      12:00 PM
+                    </span>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <button
+                type="button"
+                class="doctor-book-button"
+                data-doctor="Dr. Vivek Shaw"
+                data-specialty="Urologist"
+              >
+                Book
+              </button>
+
+            </article>
+
+
+            <!-- Dr Ahin Ash -->
+
+            <article class="doctor-row">
+
+              <div class="doctor-row-main">
+
+                <div class="doctor-avatar">
+                  AA
+                </div>
+
+                <div class="doctor-info">
+
+                  <h3>
+                    Dr. Ahin Ash
+                  </h3>
+
+                  <p class="doctor-specialty">
+                    Gynaecologist
+                  </p>
+
+                  <div class="doctor-schedule">
+
+                    <span>
+                      <b>Days</b>
+                      Wednesday &amp; Saturday
+                    </span>
+
+                    <span>
+                      <b>Time</b>
+                      To be confirmed
+                    </span>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <button
+                type="button"
+                class="doctor-book-button"
+                data-doctor="Dr. Ahin Ash"
+                data-specialty="Gynaecologist"
+              >
+                Book
+              </button>
+
+            </article>
+
+          </div>
+
+
+          <!-- MONTHLY DOCTORS -->
+
+          <div class="doctor-group monthly-doctor-group">
+
+            <div class="doctor-group-title">
+              <span>MONTHLY CONSULTATIONS</span>
+            </div>
+
+
+            <!-- Dr Avishek Naskar -->
+
+            <article class="doctor-row monthly-row">
+
+              <div class="doctor-row-main">
+
+                <div class="doctor-avatar monthly">
+                  AN
+                </div>
+
+                <div class="doctor-info">
+
+                  <h3>
+                    Dr. Avishek Naskar
+                  </h3>
+
+                  <p class="doctor-qualification">
+                    MBBS, MD (Medicine), DrNB (Nephrology)
+                  </p>
+
+                  <p class="doctor-registration">
+                    Reg. No. 66818 (WBMC)
+                  </p>
+
+                  <p class="doctor-affiliation">
+                    Narcissus Medical Centre Pvt. Ltd.
+                  </p>
+
+                  <div class="doctor-schedule">
+
+                    <span>
+                      <b>Day</b>
+                      Saturday
+                    </span>
+
+                    <span>
+                      <b>Time</b>
+                      5:00 PM
+                    </span>
+
+                    <span>
+                      <b>Frequency</b>
+                      Once a month
+                    </span>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <a
+                class="doctor-book-button monthly-book"
+                href="https://wa.me/919831998054?text=Hello%20Swasthai%20Sampad%2C%20I%20want%20to%20book%20an%20appointment%20with%20Dr.%20Avishek%20Naskar."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                I want to book
+              </a>
+
+            </article>
+
+
+            <!-- Dr Aniruddha Datta -->
+
+            <article class="doctor-row monthly-row">
+
+              <div class="doctor-row-main">
+
+                <div class="doctor-avatar monthly">
+                  AD
+                </div>
+
+                <div class="doctor-info">
+
+                  <h3>
+                    Dr. Aniruddha Datta
+                  </h3>
+
+                  <p class="doctor-qualification">
+                    MBBS, DNB, DM (Nephrology)
+                  </p>
+
+                  <p class="doctor-affiliation">
+                    Narcissus Medical Centre Pvt. Ltd.
+                  </p>
+
+                  <div class="doctor-schedule">
+
+                    <span>
+                      <b>Day</b>
+                      Sunday
+                    </span>
+
+                    <span>
+                      <b>Time</b>
+                      5:00 PM
+                    </span>
+
+                    <span>
+                      <b>Frequency</b>
+                      Once a month
+                    </span>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <a
+                class="doctor-book-button monthly-book"
+                href="https://wa.me/919831998054?text=Hello%20Swasthai%20Sampad%2C%20I%20want%20to%20book%20an%20appointment%20with%20Dr.%20Aniruddha%20Datta."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                I want to book
+              </a>
+
+            </article>
+
+          </div>
+
+
+          <!-- NOTE -->
+
+          <div class="doctor-note">
+
+            <strong>
+              Please note
+            </strong>
+
+            <p>
+              Doctor schedules may be subject to change.
+              Please confirm availability and consultation
+              timing with Swasthai Sampad before visiting. Call:9831088191
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= APPOINTMENT PANEL ================= -->
+
+        <aside class="appointment-panel" id="appointment-panel">
+
+          <div class="appointment-panel-top">
+
+            <span class="mini-badge">
+              APPOINTMENT REQUEST
+            </span>
+
+            <div class="appointment-icon">
+              🩺
+            </div>
+
+          </div>
+
+
+          <h2>
+            Book a weekly doctor
+          </h2>
+
+          <p>
+            Select a doctor and preferred date. When you
+            submit the form, you'll be redirected to WhatsApp
+            with your appointment request ready to send.
+          </p>
+
+
+          <form id="doctor-booking-form">
+
+            <div class="form-group">
+
+              <label for="doctor-select">
+                Select doctor
+              </label>
+
+              <select id="doctor-select" required>
+
+                <option value="">
+                  Choose a doctor
+                </option>
+
+                <option
+                  value="Dr. Manisha Ray"
+                  data-specialty="E.N.T"
+                >
+                  Dr. Manisha Ray — E.N.T
+                </option>
+
+                <option
+                  value="Dr. Abhisekh Reja"
+                  data-specialty="General Medicine"
+                >
+                  Dr. Abhisekh Reja — General Medicine
+                </option>
+
+                <option
+                  value="Dr. Vivek Shaw"
+                  data-specialty="Urologist"
+                >
+                  Dr. Vivek Shaw — Urologist
+                </option>
+
+                <option
+                  value="Dr. Ahin Ash"
+                  data-specialty="Gynaecologist"
+                >
+                  Dr. Ahin Ash — Gynaecologist
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="appointment-date">
+                Preferred appointment date
+              </label>
+
+              <input
+                type="date"
+                id="appointment-date"
+                required
+              />
+
+              <small>
+                Appointments must be requested at least one day in advance.
+              </small>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="patient-name">
+                Your name
+              </label>
+
+              <input
+                type="text"
+                id="patient-name"
+                placeholder="Enter your name"
+                autocomplete="name"
+                required
+              />
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="patient-phone">
+                Phone number
+              </label>
+
+              <input
+                type="tel"
+                id="patient-phone"
+                placeholder="Enter your phone number"
+                autocomplete="tel"
+                required
+              />
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="patient-note">
+                Additional note
+                <span>(optional)</span>
+              </label>
+
+              <textarea
+                id="patient-note"
+                rows="3"
+                placeholder="Anything you'd like us to know?"
+              ></textarea>
+
+            </div>
+
+
+            <button
+              type="submit"
+              class="button primary full-width appointment-submit"
+            >
+              Continue to WhatsApp
+            </button>
+
+            <p class="whatsapp-disclosure">
+              <strong>What happens next?</strong><br />
+              Clicking the button will open WhatsApp with your
+              appointment details pre-filled. You can review
+              the message before sending it to Swasthai Sampad.
+            </p>
+
+          </form>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= CALL CTA ================= -->
+
+    <section class="section doctor-contact-section">
+
+      <div class="container doctor-contact-box">
+
+        <div>
+
+          <p class="section-tag">
+            Need help?
+          </p>
+
+          <h2>
+            Prefer to speak to us directly?
+          </h2>
+
+          <p>
+            Call Swasthai Sampad to check doctor availability,
+            consultation timings or appointment details.
+          </p>
+
+        </div>
+
+        <a
+          href="tel:+919831998054"
+          class="button primary"
+        >
+          📞 Call +91 98319 98054
+        </a>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-top">
+
+      <div class="footer-brand">
+
+        <div class="footer-brand-mark">
+          +
+        </div>
+
+        <div>
+          <strong>Swasthai Sampad</strong>
+          <span>Healthcare • Pharmacy</span>
+        </div>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <a href="index.html">Home</a>
+        <a href="medicines.html">Medicines</a>
+        <a href="diagnostics.html">Diagnostics</a>
+        <a href="skincare.html">Skincare</a>
+        <a href="offers.html">Offers</a>
+        <a href="contact.html">Contact</a>
+
+      </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+      <p>
+        © <span id="year"></span> Swasthai Sampad.
+        All rights reserved.
+      </p>
+
+      <p>
+        Terms &amp; Conditions Apply
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
